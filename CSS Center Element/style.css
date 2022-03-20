@@ -1,0 +1,184 @@
+/* Start General Value */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    width: 75%;
+    margin: 10px auto;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    border: 2px solid black;
+    background-color: aquamarine;
+}
+
+/* End General Value */
+
+/* Satart Center Text in Div Horizontally */
+
+.container-trick-1-center-div {
+    text-align: center;
+}
+
+/* End Center Text in Div Horizontally */
+
+/* Satart Center Text in Div Horizontally */
+
+.container-trick-1-center-flex {
+    display: flex;
+    justify-content: center;
+}
+
+/* End Center Text in Div Horizontally */
+
+/* Satart How to Center Text in Div Vertically */
+
+.container-trick-2-center-padding {
+    padding: 20px 0;
+}
+
+/* End How to Center Text in Div Vertically */
+
+/* Satart How to Center Text in Div Vertically [height = line-height (This for single line. NOT a multiple Lines)]*/
+
+.container-trick-2-center-lineh {
+    height: 100px;
+    line-height: 100px;
+}
+
+/* End How to Center Text in Div Vertically */
+
+/* Satart How to Center Text in Div Vertically [multiple Lines]*/
+
+.container-trick-2-center-lineh {
+    height: 150px;
+    line-height: 150px;
+}
+
+.container-trick-2-center-lineh p {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+/* End How to Center Text in Div Vertically */
+
+/* Satart How to Center Text in Div Vertically [Flex]*/
+
+.container-trick-2-center-flex {
+    display: flex;
+    align-items: center;
+    height: 75px;
+}
+
+/* End How to Center Text in Div Vertically */
+
+/*#########################################################*/
+
+/* Satart How to Center a Div Horizontally */
+
+.container-trick-3-center-hor {
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid red;
+}
+
+/* End How to Center a Div Horizontally */
+
+/* Satart How to Center a Div Vertically */
+.container-vertical {
+    width: 80%;
+    margin: auto;
+    border: 2px solid black;
+    background-color: aquamarine;
+    position: relative;
+    height: 150px;
+}
+
+.container-trick-3-center-ver {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border: 2px solid red;
+    padding: 10px;
+}
+
+/* End How to Center a Div Vertically */
+
+/* Satart How to Center a Div Horizontally and Vertically */
+
+.container-trick-4-center-hor-ver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid red;
+    padding: 10px;
+}
+
+/* End How to Center a Div Horizontally and Vertically */
+
+/* Satart How to Center a Div Within a Div 
+   Using the Position, Top, Left, and Margin Properties
+*/
+
+.parent {
+    position: relative;
+    width: 80%;
+    height: 300px;
+    background-color:burlywood;
+    margin: auto;
+}
+
+.child-margin {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    background-color:cornflowerblue;
+    margin: -75px 0 0 -150px; /* 1. height (-75) 2. width (150) width (300 / 2 = 150) height (150 / 2 = 75)*/
+}
+
+/* Using the Position, Top, Left, and Transform Properties */
+
+.child-transform {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    background-color:cornflowerblue;
+    transform: translate(-50%, -50%); /* width (150 / 2 = 75) height (150 / 2 = 75)*/
+}
+
+/* Using FlexBox */
+
+.parent-flex {
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    background-color:burlywood;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child-flex {
+    width: 300px;
+    height: 150px;
+    background-color:cornflowerblue;
+}
+
+/* End How to Center a Div Within a Div */
