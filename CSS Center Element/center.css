@@ -1,0 +1,81 @@
+/* Start General Value */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    border: 2px solid black;
+    background-color: aquamarine;
+}
+
+/* End General Value */
+
+/* Start Using FlexBox */
+
+.parent-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.child-flex {
+    border: 2px solid red;
+}
+/* End Using FlexBox */
+
+/* Start Using Margin */
+
+.parent-margin {
+    display: grid;
+    height: 200px;
+}
+
+.child-margin {
+    border: 2px solid red;
+    margin: auto;
+}
+/* End Using Margin */
+
+/* Start Using Grid */
+
+.parent-grid {
+    display: grid;
+    place-items: center;
+    height: 200px;
+}
+
+.child-grid {
+    border: 2px solid red;
+}
+/* End Using Grid */
+
+/* Start Using Absolute Property */
+
+.parent-absolute{
+    position: relative;
+    height: 200px;
+}
+
+.child-absolute {
+    border: 2px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* End Using Absolute Property */
